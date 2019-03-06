@@ -19,6 +19,8 @@ ENV BITNAMI_APP_NAME="etcd" \
 
 EXPOSE 2379 2380
 
+VOLUME /opt/bitnami/etcd/data
+
 WORKDIR /opt/bitnami/etcd
 USER 1001
 ENTRYPOINT [ "/entrypoint.sh" ]
